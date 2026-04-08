@@ -1,0 +1,13 @@
+package entornos;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+public class CalculadoraRiesgo {
+    public String evaluarEdad(int edad) {
+        if (edad < 0 || edad > 120) return "Error";
+        if (edad < 18) return "Joven";
+        if (edad <= 65) return "Adulto";
+        return "Senior";
+    }
+}

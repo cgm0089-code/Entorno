@@ -1,0 +1,20 @@
+package entornos;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+class CalculadoraRiesgoTest {
+    CalculadoraRiesgo calc = new CalculadoraRiesgo();
+
+    @Test
+    void testEdadNegativa() {
+        assertEquals("Error", calc.evaluarEdad(-5));
+    }
+
+    @Test
+    void testAdulto() {
+        assertEquals("Adulto", calc.evaluarEdad(25));
+    }
+
+    // TODO: Añade tú un test para el caso "Senior"
+}
